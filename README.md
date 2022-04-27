@@ -1,6 +1,10 @@
 ## Dev Iulia Commentaries
 
-Este repositório é para fins de estudo de criação de APIs com framework NestJS
+Este repositório é para fins de estudo de criação de APIs com framework NestJS, isso inclui:
+- API REST
+- Typescript
+- NestJS Auth
+- MongoDB
 
 
 <p align="center">
