@@ -1,3 +1,4 @@
+import { AuthModule } from './auth/auth.module';
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
@@ -7,10 +8,11 @@ import { UsersModule } from './users/users.module';
 import { UserService } from './users/shared/user.service';
 
 @Module({
-  imports: [TasksModule,
-  MongooseModule.forRoot('mongodb://localhost:27017/users-db'),
-  UsersModule],
+  imports: [
+    AuthModule, TasksModule,
+    MongooseModule.forRoot('mongodb://localhost:27017/users-db'),
+    UsersModule],
   controllers: [AppController,],
-  providers: [AppService, ],
+  providers: [AppService,],
 })
-export class AppModule {}
+export class AppModule { }
