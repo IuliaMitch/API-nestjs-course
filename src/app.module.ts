@@ -10,7 +10,7 @@ import { UserService } from './users/shared/user.service';
 @Module({
   imports: [
     AuthModule, TasksModule,
-    MongooseModule.forRoot('mongodb://localhost:27017/users-db'),
+    MongooseModule.forRoot('mongodb://localhost:27017/admin'),
     UsersModule],
   controllers: [AppController,],
   providers: [AppService,],
